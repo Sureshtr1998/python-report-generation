@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       .footer-framework {
+            padding: 10px;
+            font-weight: 500;
+            font-size: 12px;
+            letter-spacing: 1190px;
+        }
+    </style>
+    <script>
+      var pageCount = 0;
+      function subst() {
+        var vars = {};
+        var x = document.location.search.substring(1).split('&');
+        for (var i in x) {
+          var z = x[i].split('=', 2);
+          vars[z[0]] = unescape(z[1]);
+        }
+        print("hi")
+        console.log("HELLO")
+        var page = vars["page"];
+        // if (page === "1") {
+          // Display "Hello, World!" when page is 1
+          
+        // } else {
+          // Render the page number for other values
+          document.getElementById("footer-page").textContent =  page;
+        // }
+      }
+    </script>
+  </head>
+  <body onload="subst()">
+    <div>
+      <p class="footer-framework">
+        <span  style="text-transform: uppercase;"> {{frameworkName}}</span>   <span style=" font-style: italic;"> (FOR INTERNAL USE ONLY) </span> 
+          <span style="font-weight: 500;padding-bottom: 3390px; padding-left: 18rem;" id="footer-page"></span>
+         </p>
+  </div>
+  </body>
+</html>

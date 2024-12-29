@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, td {
+            border-top: 0.5px solid #243c8d;
+        }
+        td {
+            padding: 2px;
+            font-size: 14px;
+            color: #675a4f;
+            padding: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <table id="{{answer.details.title}}" style="padding-top: 30px;">
+            {% for row in answer.details.rows %}
+            <tr>
+                {% for cell in row %}
+                {% if cell.type != 'skip' %}
+                <td {% if cell.details.borderB is defined or cell.details.color is defined or cell.details.width is defined or cell.details.align is defined %}style="
+                    {% if cell.details.borderB is defined %}border-bottom: {{ cell.details.borderB }}; {% endif %}
+                    {% if cell.details.color is defined %}color: {{ cell.details.color }}; {% endif %}
+                    {% if cell.details.bgndColor is defined %}background-color: {{ cell.details.bgndColor }}; {% endif %}
+                    {% if cell.details.width is defined %}width: {{ cell.details.width }}; {% endif %}
+                    {% if cell.details.align is defined %}text-align: {{ cell.details.align }}; {% endif %}"
+                {% endif %}
+                {% if cell.details.isBold %}class="colspan-h5"{% endif %}
+                {% if cell.details.colSpan or cell.details.rowSpan %}colspan="{{ cell.details.colSpan }}" rowspan="{{ cell.details.rowSpan }}" class="left-align"{% endif %}>
+                    {{ cell.details.value }}
+                </td>
+                {% endif %}
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

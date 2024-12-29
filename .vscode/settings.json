@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "saas-development.ckmfwzzuuxwx.ap-south-1.rds.amazonaws.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "database": "sc_saas",
+            "name": "Web UI",
+            "username": "saas_root"
+        }
+    ]
+}

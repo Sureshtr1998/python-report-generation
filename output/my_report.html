@@ -1,0 +1,3038 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>18. Details as at the end of Financial Year:</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            font-size: 16px;
+            color: rgb(63, 165, 254);
+        }
+        .colspan-h5 {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .main-title {
+            font-size: 46px;
+            color: #243c8d;
+            padding-top: 10px;
+        }
+        .sub-title {
+            font-size: 16px;
+            color: #243c8d;
+            padding-top: 20px;
+        }
+        .key-name {
+            color: #675a4f;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .page-break {
+            page-break-before: always;
+        }
+        
+        h1{
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: 10px;
+            color:#1E1D47
+           
+        }
+        h2{
+            font-weight: 600;
+            font-size: 16px;
+            letter-spacing: 10px;
+            color:#1E1D47
+        }
+        h3{
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 10px;
+            color:#1E1D47
+        }
+        .question{
+            color:#039983;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .question-details{
+            color:#039983;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    </style>
+    
+</head>
+<body>
+    <!DOCTYPE html>
+<html> 
+    <head>
+        <style> 
+        
+        .home-name{
+            font-weight: 500;
+            font-size: 60px;
+            color: #2D2D2D;
+            padding: 15px;
+        }
+        .home-title{
+            padding-top: 50%;
+            color: #2D2D2D;
+            font-weight: 500;
+            font-size: 30px;
+        }
+        .home-report {
+            color: #959595;
+            font-weight: 500;
+            font-size: 24px;
+            padding-bottom: 30%;
+        }
+        
+        </style>
+    </head>
+
+  <img width="70px" height="70px" src="data:image/png;base64,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AAAAlAhQAAAASgQoAAAAJQIUAACAEgEKAABAiQAFAACgRIACAABQIkABAAAoEaAAAACUCFAAAABKBCgAAAAlAhQAAIASAQoAAECJAAUAAKBEgAIAAFAiQAEAACgRoAAAAJQIUAAAAEoEKAAAACUCFAAAgBIBCgAAQIkABQAAoESAAgAAUCJAAQAAKBGgAAAAlAhQAAAASgQoAAAAJQIUAACAEgEKAABAiQAFAACgRIACAABQIkABAAAoEaAAAACUCFAAAABKBCgAAAAlAhQAAIASAQoAAECJAAUAAKBEgAIAAFAiQAEAACgRoAAAAJQIUAAAAEoEKAAAACUCFAAAgBIBCgAAQIkABQAAoESAAgAAUCJAAQAAKBGgAAAAlAhQAAAASgQoAAAAJQIUAACAEgEKAABAiQAFAACgRIACAABQIkABAAAoEaAAAACUCFAAAABKBCgAAAAlAhQAAIASAQoAAECJAAUAAKBEgAIAAFAiQAEAACgRoAAAAJQIUAAAAEoEKAAAACUCFAAAgBIBCgAAQIkABQAAoESAAgAAUCJAAQAAKBGgAAAAlAhQAAAASgQoAAAAJQIUAACAEgEKAABAiQAFAACgRIACAABQIkABAAAoEaAAAACUCFAAAABKBCgAAAAlAhQAAIASAQoAAECJAAUAAKBEgAIAAFAiQAEAACgRoAAAAJQIUAAAAEoEKAAAACUCFAAAgBIBCgAAQIkABQAAoESAAgAAUCJAAQAAKBGgAAAAlAhQAAAASgQoAAAAJQIUAACAEgEKAABAiQAFAACgRIACAABQIkABAAAoEaAAAACUCFAAAABKBCgAAAAlAhQAAIASAQoAAECJAAUAAKBEgAIAAFAiQAEAACgRoAAAAJQIUAAAAEoEKAAAACUCFAAAgBIBCgAAQIkABQAAoESAAgAAUCJAAQAAKBGgAAAAlAhQAAAASgQoAAAAJQIUAACAEgEKAABAiQAFAACgRIACAABQIkABAAAoEaAAAACUCFAAAABKBCgAAAAlAhQAAIASAQoAAECJAAUAAKBEgAIAAFAiQAEAACgRoAAAAJQIUAAAAEoEKAAAACUCFAAAgBIBCgAAQIkABQAAoESAAgAAUCJAAQAAKBGgAAAAlAhQAAAASgQoAAAAJQIUAACAEgEKAABAiQAFAACgRIACAABQIkABAAAoEaAAAACUCFAAAABKBCgAAAAlAhQAAIASAQoAAECJAAUAAKBEgAIAAFAiQAEAACgRoAAAAJQIUAAAAEoEKAAAACUCFAAAgBIBCgAAQIkABQAAoESAAgAAUCJAAQAAKBGgAAAAlAhQAAAASgQoAAAAJQIUAACAEgEKAABAiQAFAACgRIACAABQIkABAAAoEaAAAACUCFAAAABKBCgAAAAlAhQAAIASAQoAAECJAAUAAKBEgAIAAFAiQAEAACgRoAAAAJQIUAAAAEoEKAAAACUCFAAAgBIBCgAAQIkABQAAoESAAgAAUCJAAQAAKBGgAAAAlAhQAAAASgQoAAAAJQIUAACAEgEKAABAiQAFAACgRIACAABQIkABAAAoEaAAAACUCFAAAABKBCgAAAAlAhQAAIASAQoAAECJAAUAAKBEgAIAAFAiQAEAACgRoAAAAJQIUAAAAEoEKAAAACUCFAAAgBIBCgAAQIkABQAAoESAAgAAUCJAAQAAKBGgAAAAlAhQAAAASgQoAAAAJQIUAACAEgEKAABAiQAFAACgRIACAABQIkABAAAoEaAAAACUCFAAAABKBCgAAAAlAhQAAIASAQoAAECJAAUAAKBEgAIAAFAiQAEAACgRoAAAAJQIUAAAAEoEKAAAACUCFAAAgBIBCgAAQIkABQAAoESAAgAAUCJAAQAAKBGgAAAAlAhQAAAASgQoAAAAJQIUAACAEgEKAABAiQAFAACgRIACAABQIkABAAAoEaAAAACUCFAAAABKBCgAAAAlAhQAAIASAQoAAECJAAUAAKBEgAIAAFAiQAEAACgRoAAAAJQIUAAAAEoEKAAAACUCFAAAgBIBCgAAQIkABQAAoESAAgAAUCJAAQAAKBGgAAAAlAhQAAAASgQoAAAAJQIUAACAEgEKAABAiQAFAACgRIACAABQIkABAAAoEaAAAACUCFAAAABKBCgAAAAlAhQAAIASAQoAAECJAAUAAKBEgAIAAFAiQAEAACgRoAAAAFRE/j8IH6cajRBbwwAAAABJRU5ErkJggg=="/>
+  <p class="home-name"> Business Responsibility & Sustainability Reporting FY 2022-23</p>
+
+  <p class="home-title"> BRSR_FY2023</p>
+  <p class="home-report">Report generated on 15th November, 2023</p>
+  
+    
+</html>
+     
+    <div id="table-of-contents"></div>
+  
+   
+
+    <!-- Categories -->
+    <div > 
+    <h1>SECTION A: GENERAL DISCLOSURES</h1>
+    <h2>Details of Listed Entities</h2>
+    <h3>Sub Category</h3>
+</div>
+      <!-- Categories End -->
+
+    <!-- <h1 class="main-title">BUSINESS RESPONSIBILITY AND SUSTAINABILITY REPORT</h1>
+    <h5 class="sub-title">SECTION A: GENERAL DISCLOSURES</h5> -->
+
+    <h4 class="question">QUESTION 1</h4>
+    <h4 class="question-details">Corporate Identity Number (CIN) of the Listed Entity</h4>
+
+
+
+
+    
+    <p><span class="key-name">1. Corporate Identity Number (CIN) of the Listed Entity</span> <span>L74999MH1994PLC077041</span></p>
+    
+    <p><span class="key-name">2. Name of the Listed Entity</span> <span> JSW Energy Limited</span></p>
+    
+    <p><span class="key-name">3. Year of incorporation</span> <span>1994</span></p>
+    
+    <p><span class="key-name">4. Registered office address</span> <span>JSW Centre, Bandra Kurla Complex, Bandra (East), Mumbai 400 05</span></p>
+    
+    <p><span class="key-name">5. Corporate address</span> <span>JSW Centre, Bandra Kurla Complex, Bandra (East), Mumbai 400 051</span></p>
+    
+    <p><span class="key-name">6. E-mail </span> <span>jswel.investor@jsw.in</span></p>
+    
+    <p><span class="key-name">7. Telephone</span> <span>+91 22 42861000</span></p>
+    
+    <p><span class="key-name">8. Website</span> <span>www.jsw.in</span></p>
+    
+    <p><span class="key-name">9. Financial year for which reporting is being done</span> <span> 2022-23</span></p>
+    
+    <p><span class="key-name">10. Name of the Stock Exchange(s) where shares are listed </span> <span><br> &nbsp;&nbsp;&nbsp; 1. BSE Limited <br> &nbsp;&nbsp;&nbsp;  2. National Stock Exchange of India Limited</span></p>
+    
+    <p><span class="key-name">11. Paid-up Capital </span> <span>1644,67,56,680</span></p>
+    
+    <p><span class="key-name">12. Name and contact details (telephone, email address) of the person who may be contacted in case of any queries on the BRSR report </span> <span></span></p>
+    
+    <p><span class="key-name">&nbsp; &nbsp; &nbsp; a) &nbsp; &nbsp; &nbsp; Director responsible for BRSR:</span> <span>Mr. Prashant Jain (DIN: 01281621) <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Joint Managing Director & CEO <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Email: jswel.investor@jsw.in <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Phone: 022-42861000</span></p>
+    
+    <p><span class="key-name">&nbsp; &nbsp; &nbsp; b) &nbsp; &nbsp; &nbsp; BRSR Head:</span> <span>Mr. Aditya Agarwal <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Head - Renewable <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Email: aditya.agarwal@jsw.in <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Phone: 022-42861000</span></p>
+    
+    <p><span class="key-name">&nbsp; &nbsp; &nbsp; c) &nbsp; &nbsp; &nbsp; Supported By:</span> <span>Mr. Prabodha Acharya (Group Chief Sustainability Officer) <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Joint Managing Director & CEO <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Email: prabodha.acharya@jsw.in <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Phone: 022-42861000</span></p>
+    
+    <p><span class="key-name">13. Reporting boundary - Are the disclosures under this report made on a standalone basis (i.e., only for the entiy) or on a consolidated basis (i.e., for the entity and all the entities which form a part of its consolidated financial statements, taken together)</span> <span> Disclosures are made on a consolidated basis.</span></p>
+    
+
+    <h4 class="header">IV. Employees</h4>
+    <h5 class="key-name">18. Details as at the end of Financial Year:</h5>
+
+    
+    <div style="padding-top: 30px;"></div>
+    
+    
+    
+    <h5 class="key-name" id="GENERAL DISCLOSURES">&nbsp; &nbsp; &nbsp; a. Employees and workers (including differently abled):</h5>
+    
+    
+    <div style="padding-top: 30px;"></div>
+    
+    
+    
+
+    <!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, td {
+            border-top: 0.5px solid #243c8d;
+        }
+        td {
+            padding: 2px;
+            font-size: 14px;
+            color: #675a4f;
+            padding: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <table id="MANAGEMENT AND PROCESS DISCLOSURES" style="padding-top: 30px;">
+            
+            <tr>
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="2" class="left-align">
+                    S.No.
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    
+                    
+                    width: 180px; 
+                    "
+                
+                class="colspan-h5"
+                colspan="1" rowspan="2" class="left-align">
+                    Particulars
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="2" class="left-align">
+                    Total (A)
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    
+                    
+                    
+                    text-align: center; "
+                
+                class="colspan-h5"
+                colspan="2" rowspan="1" class="left-align">
+                    Male
+                </td>
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    No. (B)
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    % (B/A)
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td style="
+                    
+                    
+                    
+                    
+                    text-align: center; "
+                
+                class="colspan-h5"
+                colspan="9" rowspan="1" class="left-align">
+                    EMPLOYEES
+                </td>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    1.
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Permanent (D)
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    2.
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Other than Permanent (E)
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    3. 
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    Total employees (D + E)
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td style="
+                    
+                    
+                    
+                    
+                    text-align: center; "
+                
+                class="colspan-h5"
+                colspan="9" rowspan="1" class="left-align">
+                    WORKERS
+                </td>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    4. 
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Permanent (D)
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    5. 
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Other than Permanent (G)
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    6. 
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    Total workers (F + G)
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+        </table>
+    </body>
+</html>
+
+    
+    
+    <div style="padding-top: 30px;"></div>
+    
+    
+    
+
+    <!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, td {
+            border-top: 0.5px solid #243c8d;
+        }
+        td {
+            padding: 2px;
+            font-size: 14px;
+            color: #675a4f;
+            padding: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <table id="MANAGEMENT AND PROCESS DISCLOSURES" style="padding-top: 30px;">
+            
+            <tr>
+                
+                
+                <td style="
+                    
+                    
+                    
+                    
+                    text-align: center; "
+                
+                class="colspan-h5"
+                colspan="2" rowspan="1" class="left-align">
+                    Female
+                </td>
+                
+                
+                
+                
+                
+                <td style="
+                    
+                    
+                    
+                    
+                    text-align: center; "
+                
+                class="colspan-h5"
+                colspan="2" rowspan="1" class="left-align">
+                    Other
+                </td>
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    No. (C)
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    % (C/A)
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    No. (D)
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    % (D/A)
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+        </table>
+    </body>
+</html>
+
+    
+    
+    <div style="padding-top: 30px;"></div>
+    
+    
+    
+    <h5 class="key-name" id="PRINCIPLE WISE PERFORMANCE DISCLOSURE">&nbsp; &nbsp; &nbsp; b. Differently abled Employees and workers:</h5>
+    
+    
+    <div style="padding-top: 30px;"></div>
+    
+    
+    
+
+    <!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, td {
+            border-top: 0.5px solid #243c8d;
+        }
+        td {
+            padding: 2px;
+            font-size: 14px;
+            color: #675a4f;
+            padding: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <table id="BUSINESS CONDUCT" style="padding-top: 30px;">
+            
+            <tr>
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="2" class="left-align">
+                    S.No.
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    
+                    
+                    width: 180px; 
+                    "
+                
+                class="colspan-h5"
+                colspan="1" rowspan="2" class="left-align">
+                    Particulars
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="2" class="left-align">
+                    Total (A)
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    
+                    
+                    
+                    text-align: center; "
+                
+                class="colspan-h5"
+                colspan="2" rowspan="1" class="left-align">
+                    Male
+                </td>
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    No. (B)
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    % (B/A)
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td style="
+                    
+                    
+                    
+                    
+                    text-align: center; "
+                
+                class="colspan-h5"
+                colspan="9" rowspan="1" class="left-align">
+                    DIFFERENTLY ABLED EMPLOYEES
+                </td>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    1.
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Permanent (D)
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    2.
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Other than Permanent (E)
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    3. 
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    Total differently abled employees (D + E)
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td style="
+                    
+                    
+                    
+                    
+                    text-align: center; "
+                
+                class="colspan-h5"
+                colspan="9" rowspan="1" class="left-align">
+                    DIFFERENTLY ABLED WORKERS
+                </td>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    4. 
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Permanent (D)
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    5. 
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Other than Permanent (G)
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    6. 
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    Total differently abled workers (F + G)
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+        </table>
+    </body>
+</html>
+
+    
+    
+    <div style="padding-top: 30px;"></div>
+    
+    
+    
+
+    <!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, td {
+            border-top: 0.5px solid #243c8d;
+        }
+        td {
+            padding: 2px;
+            font-size: 14px;
+            color: #675a4f;
+            padding: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <table id="BUSINESS CONDUCT" style="padding-top: 30px;">
+            
+            <tr>
+                
+                
+                <td style="
+                    
+                    
+                    
+                    
+                    text-align: center; "
+                
+                class="colspan-h5"
+                colspan="2" rowspan="1" class="left-align">
+                    Female
+                </td>
+                
+                
+                
+                
+                
+                <td style="
+                    
+                    
+                    
+                    
+                    text-align: center; "
+                
+                class="colspan-h5"
+                colspan="2" rowspan="1" class="left-align">
+                    Other
+                </td>
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    No. (C)
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    % (C/A)
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    No. (D)
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    % (D/A)
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    NaN
+                </td>
+                
+                
+            </tr>
+            
+        </table>
+    </body>
+</html>
+
+    
+    
+    <div style="padding-top: 30px;"></div>
+    
+    
+    <div> 
+        <h5 id="section" class="sub-title">SECTION B: MANAGEMENT AND PROCESS DISCLOSURES</h5>
+        <p>This section is aimed at helping businesses demonstrate the structures, policies, and processes put in place towards adopting the National Guidelines on Responsible Business Conduct (NGRBC) Principles and Core Elements</p>
+    </div>
+    
+    
+    <h5 class="key-name" id="BUSINESS PROVIDE GOODS AND SERVICES IN A MANNER THAT">4. Of the products and packaging reclaimed at end of life of products, amount (in metric tonnes) reused, recycled, and safely disposed, as per the following format:</h5>
+    
+    
+    <div style="padding-top: 30px;"></div>
+    
+    
+    
+
+    <!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, td {
+            border-top: 0.5px solid #243c8d;
+        }
+        td {
+            padding: 2px;
+            font-size: 14px;
+            color: #675a4f;
+            padding: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <table id="BUSINESS SHOULD RESPECT AND PROMOTE HUMAN RIGHTS" style="padding-top: 30px;">
+            
+            <tr>
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="2" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #243c8d; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                class="colspan-h5"
+                colspan="3" rowspan="1" class="left-align">
+                    FY 2022-23 Current Financial Year
+                </td>
+                
+                
+                
+                
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="3" rowspan="1" class="left-align">
+                    FY 2021-22 Previous Financial Year
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                
+                
+                <td style="
+                    border-bottom: 5px solid #243c8d; 
+                    color: #243c8d; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    Reused
+                </td>
+                
+                
+                
+                <td style="
+                    border-bottom: 5px solid #243c8d; 
+                    color: #243c8d; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    Recycled
+                </td>
+                
+                
+                
+                <td style="
+                    border-bottom: 5px solid #243c8d; 
+                    color: #243c8d; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    Safely Disposed
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    Reused
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td style="
+                    
+                    
+                    
+                    width: 150px; 
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Plastic (Including Packaging) MT
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    2.43
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    E-Waste MT
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    6.02
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Hazardous waste MT
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    30.085 (waste oil) + 104.54 (battery waste)
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Other Waste MT
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    1378753.48 (FlyAsh & Bottom Ash + Primary Sludge)
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    1.875 (Food waste)
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0.62 (Biomedical waste) + 1508.31 (MS Scrap)
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    113620 (FlyAsh & Bottom Ash)
+                </td>
+                
+                
+            </tr>
+            
+        </table>
+    </body>
+</html>
+
+    
+    
+    <div style="padding-top: 30px;"></div>
+    
+    
+    
+
+    <!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, td {
+            border-top: 0.5px solid #243c8d;
+        }
+        td {
+            padding: 2px;
+            font-size: 14px;
+            color: #675a4f;
+            padding: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <table id="BUSINESS SHOULD RESPECT AND PROMOTE HUMAN RIGHTS" style="padding-top: 30px;">
+            
+            <tr>
+                
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    Recycled
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    Safely Disposed
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    83.12
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0.38
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    50.65
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    192.30 (battery waste+other)
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td 
+                
+                >
+                    
+                </td>
+                
+                
+            </tr>
+            
+        </table>
+    </body>
+</html>
+
+    
+    
+    <div style="padding-top: 30px;"></div>
+    
+    
+    
+    <h5 class="key-name" id="BUSINESS SHOULD PROMOTE INCLUSIVE GROWTH"></h5>
+    
+    
+    <div style="padding-top: 30px;"></div>
+    
+    
+    
+
+    <!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, td {
+            border-top: 0.5px solid #243c8d;
+        }
+        td {
+            padding: 2px;
+            font-size: 14px;
+            color: #675a4f;
+            padding: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <table id="BUSINESS SHOULD ENGAGE WITH CUSTOMERS" style="padding-top: 30px;">
+            
+            <tr>
+                
+                
+                <td style="
+                    
+                    
+                    
+                    width: 40%; 
+                    "
+                
+                class="colspan-h5"
+                colspan="1" rowspan="2" class="left-align">
+                    Disclosure Questions
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    P
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    P
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    P
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    P
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    1
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    2
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    3
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    4
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="10" rowspan="1" class="left-align">
+                    Policy and management processes
+                </td>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    1. &nbsp; &nbsp; a.&nbsp;&nbsp;  Whether your entity policy/policies cover each 
+principle and its core elements of the NGRBCs. 
+(Yes/No) 
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Yes
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Yes
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Yes
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Yes
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    &nbsp; &nbsp;&nbsp; &nbsp; c. Web Link of the Policies, if available
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="9" rowspan="1" class="left-align">
+                    https://www.jsw.in/groups/sustainability-policies
+                </td>
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    4. Name of the national and international codes/
+certifications/labels/ standards (e.g., Forest 
+Stewardship Council, Fairtrade, Rainforest Alliance, 
+Trustea) standards (e.g., SA 8000, OHSAS, ISO, BIS) 
+adopted by your entity and mapped to each principle
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="9" rowspan="1" class="left-align">
+                    The policies are based on NGRBC, in addition to conformance to the spirit of international standards like ISO 9001, ISO 14001, ISO45001, ISO 50001, ISO26000, SA8000, IFC Performance Standards, OECD Guidelines, UNGC guidelines and ILO Principles, ILO Convention on Human Rights, Report on Affirmative Action by CII, National Action Plan on Climate Change, National Environmental Policy, UN Sustainable Development Goals, Global Reporting Initiative, Carbon Disclosure Project (CDP) and Dow Jones Sustainability Index (DJSI).
+                </td>
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    9. Details of the highest authority responsible for 
+implementation and oversight of the Business 
+Responsibility policy (ies).
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="9" rowspan="1" class="left-align">
+                    Yes. The Board Sustainability Committee is responsible for implementation of the Policies. The Committee comprises of three Directors, out of which two are Independent Directors and one Executive Director, along with four Permanent Invitees. The broad terms of reference of the Sustainability Committee are the adoption of National Guidelines on Responsible Business Conduct (NGRBC) relating to Social, Environmental and Economic Responsibilities of Business in business practices of the Company, review the progress of initiatives under the purview of business responsibility (sustainability) and to periodically assess the ESG performance of the Company
+                </td>
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    6. Performance of the entity against the specific 
+commitments, goals and targets along-with reasons 
+in case the same are not met
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="9" rowspan="1" class="left-align">
+                    In order to become Net Zero by 2050, the organization has set Targets for Environment Sustainability through its ‘TEN Commitments’ which is available on the website. More specific and quantified targets for the Environment Sustainability are provided in the Annual Integrated Report of the Organisation under the Sustainability reporting. The FY20 baseline and FY23 performance can be seen in the table provided in the Integrated Report, Sustainability report section
+                </td>
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+        </table>
+    </body>
+</html>
+
+    
+    
+    <div style="padding-top: 30px;"></div>
+    
+    
+    
+
+    <!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, td {
+            border-top: 0.5px solid #243c8d;
+        }
+        td {
+            padding: 2px;
+            font-size: 14px;
+            color: #675a4f;
+            padding: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <table id="BUSINESS SHOULD ENGAGE WITH CUSTOMERS" style="padding-top: 30px;">
+            
+            <tr>
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    P
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    P
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    P
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    P
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    P
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    5
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    6
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    7
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    8
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    9
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Yes
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Yes
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Yes
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Yes
+                </td>
+                
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Yes
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </tr>
+            
+        </table>
+    </body>
+</html>
+
+    
+    
+    <div style="padding-top: 30px;"></div>
+    
+    
+    
+
+    <!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, td {
+            border-top: 0.5px solid #243c8d;
+        }
+        td {
+            padding: 2px;
+            font-size: 14px;
+            color: #675a4f;
+            padding: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <table id="BUSINESS SHOULD RESPECT STAKE HOLDERS" style="padding-top: 30px;">
+            
+            <tr>
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    
+                </td>
+                
+                
+                
+                <td style="
+                    border-bottom: 5px solid #243c8d; 
+                    color: #243c8d; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    FY 2022-23 Current Financial Year
+                </td>
+                
+                
+                
+                <td 
+                class="colspan-h5"
+                colspan="1" rowspan="1" class="left-align">
+                    FY 2021-22 Previous Financial Year
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td style="
+                    
+                    
+                    
+                    width: 150px; 
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Plastic (Including Packaging) MT
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    E-Waste MT
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    6.02
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Hazardous waste MT
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    0
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    30.085 (waste oil) + 104.54 (battery waste)
+                </td>
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <td 
+                
+                colspan="1" rowspan="1" class="left-align">
+                    Other Waste MT
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    background-color: #e9e8f6; 
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    1378753.48 (FlyAsh & Bottom Ash + Primary Sludge)
+                </td>
+                
+                
+                
+                <td style="
+                    
+                    color: #675a4f; 
+                    
+                    
+                    "
+                
+                
+                colspan="1" rowspan="1" class="left-align">
+                    1.875 (Food waste)
+                </td>
+                
+                
+            </tr>
+            
+        </table>
+    </body>
+</html>
+
+    
+    
+ 
+
+</body>
+</html>

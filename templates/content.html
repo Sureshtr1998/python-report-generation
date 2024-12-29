@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    
+    .contents {
+    background-color: #c7322c; /* Background color only to the text */
+    font-weight: 600;
+    padding:0 5px;
+    text-align: center;
+    width:100px;
+    position:absolute;
+    right:45%;
+}
+
+.content-data{
+    padding-top: 5rem;
+    
+}
+.content-ul{
+    position:absolute;
+    /* right:10%; */
+    padding-top: 10px;
+    width:105px;
+    border-bottom: 5px solid black;
+}
+        .contents p {
+            color: white;
+        }
+.content-link {
+position: absolute;
+left:15rem
+}   
+ </style>
+    <script>
+        // document.getElementsByTagName("body")[0].addEventListener()
+        
+        function addPageNumbers() {
+            var titles = document.querySelectorAll(".title");
+            var contents = document.getElementById("contents");
+            var pageNumber = 1;
+            document.getElementById("texst").innerHTML = JSON.stringify(contents)
+            titles.forEach(function (title) {
+             
+               console.log("HEYY")
+                var titleId = title.getAttribute("id");
+                var link = document.createElement("a");
+                link.href = "#" + titleId;
+                link.textContent = title.textContent;
+                link.style.display = "block";
+
+                // Add the page number
+                var pageNumberSpan = document.createElement("span");
+                pageNumberSpan.textContent = " (Page " + pageNumber + ")";
+                pageNumberSpan.style.fontSize = "12px";
+                pageNumberSpan.style.marginLeft = "5px";
+                link.appendChild(pageNumberSpan);
+
+                contents.appendChild(link);
+                pageNumber++;
+            });
+        }
+
+        // window.addEventListener("load", addPageNumbers);
+    </script>
+</head>
+
+<body onload="addPageNumbers()">
+    <div id="texst"> </div>
+    <div class="contents" id="contents">
+        <p>CONTENTS</p>
+        <div class="content-ul"></div>
+    </div>
+
+    <div class="content-data"> 
+    {% for answer in answers %}
+    <div style="padding-top: 20px;"> 
+        <p>
+            <span style="color: #aa302d; text-decoration: underline; text-decoration-color: #aa302d;">{{ answer.details.header }} :</span>
+            <span class="content-link" style="letter-spacing: 12px; color:#272626; font-size: 16px;"> <a href="#{{ answer.details.title }}" style="text-decoration: none; color: black;">{{ answer.details.title }}</a>
+            </span>
+        </p>
+      
+    
+        <!-- Your content here -->
+    </div>
+  
+    {% endfor %}
+</div>
+</body>
+</html>

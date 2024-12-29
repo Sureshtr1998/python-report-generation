@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>{{ question.text }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            font-size: 16px;
+            color: rgb(63, 165, 254);
+        }
+        .colspan-h5 {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .main-title {
+            font-size: 46px;
+            color: #243c8d;
+            padding-top: 10px;
+        }
+        .sub-title {
+            font-size: 16px;
+            color: #243c8d;
+            padding-top: 20px;
+        }
+        .key-name {
+            color: #675a4f;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .page-break {
+            page-break-before: always;
+        }
+        
+        h1{
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: 10px;
+            color:#1E1D47
+           
+        }
+        h2{
+            font-weight: 600;
+            font-size: 16px;
+            letter-spacing: 10px;
+            color:#1E1D47
+        }
+        h3{
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 10px;
+            color:#1E1D47
+        }
+        .question{
+            color:#039983;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .question-details{
+            color:#039983;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    </style>
+    
+</head>
+<body>
+    {% include "homepage.html" %}
+     
+    <div id="table-of-contents"></div>
+  
+   
+
+    <!-- Categories -->
+    <div > 
+    <h1>SECTION A: GENERAL DISCLOSURES</h1>
+    <h2>Details of Listed Entities</h2>
+    <h3>Sub Category</h3>
+</div>
+      <!-- Categories End -->
+
+    <!-- <h1 class="main-title">BUSINESS RESPONSIBILITY AND SUSTAINABILITY REPORT</h1>
+    <h5 class="sub-title">SECTION A: GENERAL DISCLOSURES</h5> -->
+
+    <h4 class="question">QUESTION 1</h4>
+    <h4 class="question-details">Corporate Identity Number (CIN) of the Listed Entity</h4>
+
+
+
+
+    {% for sec in sections %}
+    <p><span class="key-name">{{ sec.key }}</span> <span>{{ sec.value|replace('\n', '<br>')|safe }}</span></p>
+    {% endfor %}
+
+    <h4 class="header">IV. Employees</h4>
+    <h5 class="key-name">{{ question.text }}</h5>
+
+    {% for answer in answers %}
+    <div style="padding-top: 30px;"></div>
+    
+    {% if loop.index == 7 %}
+    <div> 
+        <h5 id="section" class="sub-title">SECTION B: MANAGEMENT AND PROCESS DISCLOSURES</h5>
+        <p>This section is aimed at helping businesses demonstrate the structures, policies, and processes put in place towards adopting the National Guidelines on Responsible Business Conduct (NGRBC) Principles and Core Elements</p>
+    </div>
+    {% endif %}
+    {% if answer.type == 'STATIC_TABLE' or answer.type == 'DYNAMIC_TABLE' %}
+
+    {% include "components/table.html" %}
+
+    {% else %}
+    <h5 class="key-name" id="{{ answer.details.title }}">{{ answer.details.value }}</h5>
+    {% endif %}
+    {% endfor %}
+ 
+
+</body>
+</html>
